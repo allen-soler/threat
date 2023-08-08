@@ -1,11 +1,11 @@
 import validator  from "validator"
 import mongoose from "mongoose"
 
-if (!process.env.MONGOOSECONATLAS) {
+if (!process.env.MOONGOSEATLAS) {
     throw new Error("MOONGOSEATLAS ne pas sur env");
 }
 
-const connection : string | undefined = process.env.MONGOOSECONATLAS
+const connection : string | undefined = process.env.MOONGOSEATLAS
 
 const dbName = 'threats-app'
 

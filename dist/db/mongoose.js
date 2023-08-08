@@ -4,9 +4,9 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const mongoose_1 = __importDefault(require("mongoose"));
-if (!process.env.MONGOOSECONATLAS) {
+if (!process.env.MOONGOSEATLAS) {
     throw new Error("MOONGOSEATLAS ne pas sur env");
 }
-const connection = process.env.MONGOOSECONATLAS;
+const connection = process.env.MOONGOSEATLAS;
 const dbName = 'threats-app';
 mongoose_1.default.connect(connection, {});
