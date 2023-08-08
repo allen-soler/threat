@@ -1,0 +1,14 @@
+textarea {
+    width: 100%;
+    min-height: 100px;
+    resize: none; /* Disable manual resize */
+    overflow-y: auto; /* Allow vertical scrolling if content exceeds the textarea's height */
+    transition: height 0.2s; /* Optional: smooth height transition */
+}
+
+/* Make it responsive */
+@media (max-width: 600px) {
+    textarea {
+        width: 100%;
+    }
+}
