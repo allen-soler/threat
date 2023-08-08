@@ -24,8 +24,13 @@
     "nodemon": "^3.0.1",
     "ts-node": "^10.9.1"
   },
+  "compilerOptions": {
+    "outDir": "./dist", 
+    "rootDir": "./src"
+  },
   "scripts": {
-    "start": "ts-node src/index.ts",
-    "build": "tsc"
+    "start": "node dist/index.js",
+    "build": "tsc",
+    "dev": "ts-node src/index.ts"
   }
 }
